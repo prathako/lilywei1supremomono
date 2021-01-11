@@ -1,0 +1,18 @@
+2020-04-20 10:55:42.320	1	lilywei	NULL	background	XTP_CKPT_AGENT	WAIT_XTP_HOST_WAIT	-222945424		WAIT_XTP_HOST_WAIT
+2020-04-20 10:55:42.337	2	lilywei	NULL	background	LOG WRITER	LOGMGR_QUEUE	11		LOGMGR_QUEUE
+2020-04-20 10:55:42.353	3	lilywei	NULL	background	RECOVERY WRITER	DIRTY_PAGE_POLL	97		DIRTY_PAGE_POLL
+2020-04-20 10:55:42.353	4	lilywei	NULL	background	LAZY WRITER	LAZYWRITER_SLEEP	104		LAZYWRITER_SLEEP
+2020-04-20 10:55:42.353	5	lilywei	NULL	background	LOCK MONITOR	REQUEST_FOR_DEADLOCK_SEARCH	3670		REQUEST_FOR_DEADLOCK_SEARCH
+2020-04-20 10:55:42.353	7	lilywei	NULL	background	XIO_RETRY_WORKER	SLEEP_TASK	230		SLEEP_TASK
+2020-04-20 10:55:42.353	8	lilywei	NULL	background	XIO_LEASE_RENEWAL_WORKER	SLEEP_TASK	183		SLEEP_TASK
+2020-04-20 10:55:42.367	10	lilywei	NULL	background	RESOURCE MONITOR	SLEEP_TASK	74		SLEEP_TASK
+2020-04-20 10:55:42.367	11	lilywei	NULL	background	XE DISPATCHER	XE_DISPATCHER_WAIT	38997		XE_DISPATCHER_WAIT
+2020-04-20 10:55:42.367	12	lilywei	NULL	background	XE TIMER	XE_TIMER_EVENT	2875		XE_TIMER_EVENT
+2020-04-20 10:55:42.417	15	lilywei	NULL	background	SYSTEM_HEALTH_MONITOR	SP_SERVER_DIAGNOSTICS_SLEEP	140385		SP_SERVER_DIAGNOSTICS_SLEEP
+2020-04-20 10:55:42.417	16	lilywei	NULL	background	RECEIVE	NULL	0		MEMORY_ALLOCATION_EXT
+2020-04-20 10:55:42.633	20	lilywei	NULL	background	UNKNOWN TOKEN	FT_IFTSHC_MUTEX	-222945726		FT_IFTSHC_MUTEX
+2020-04-20 10:55:42.633	23	lilywei	NULL	background	HADR_AR_MGR_NOTIFICATION_WORKER	HADR_NOTIFICATION_DEQUEUE	-222945726		HADR_NOTIFICATION_DEQUEUE
+2020-11-02 17:11:33.370	21724	lilywei	select count(aafile0_.id) as col_0_0_ from dbo.AAFILE aafile0_ where (aafile0_.tenant_uuid = @P0) and aafile0_.workspace_id=0 and aafile0_.parent_id=17 and aafile0_.is_metadata=0 and (aafile0_.id in (select botpermiss1_.bot_id from dbo.BOT_PERMISSION botpermiss1_ where botpermiss1_.user_id=2) or aafile0_.is_directory=0 and (aafile0_.parent_id in (select botpermiss2_.bot_id from dbo.BOT_PERMISSION botpermiss2_ where botpermiss2_.user_id=2)))	suspended	SELECT	LCK_M_S	133872	KEY: 33:72057594058178560 (8c752d5f60d8)	LCK_M_S
+2020-11-02 17:12:40.537	21725	lilywei	select count(aafile0_.id) as col_0_0_ from dbo.AAFILE aafile0_ where (aafile0_.tenant_uuid = @P0) and aafile0_.workspace_id=2 and aafile0_.parent_id=2099 and aafile0_.is_metadata=0	suspended	SELECT	LCK_M_S	66768	KEY: 33:72057594058178560 (f17d04e285c7)	LCK_M_S
+2020-11-02 17:12:43.803	21726	lilywei	select count(aafile0_.id) as col_0_0_ from dbo.AAFILE aafile0_ where (aafile0_.tenant_uuid = @P0) and aafile0_.workspace_id=2 and aafile0_.parent_id=2099 and aafile0_.is_metadata=0	suspended	SELECT	LCK_M_S	63519	KEY: 33:72057594058178560 (f17d04e285c7)	LCK_M_S
+2020-11-20 17:13:47.310	16044	lilywei	SELECT      r.start_time [Start Time],session_ID [SPID],             DB_NAME(database_id) [Database],             SUBSTRING(t.text,(r.statement_start_offset/2)+1,             CASE WHEN statement_end_offset=-1 OR statement_end_offset=0             THEN (DATALENGTH(t.Text)-r.statement_start_offset/2)+1             ELSE (r.statement_end_offset-r.statement_start_offset)/2+1             END) [Executing SQL],             Status,command,wait_type,wait_time,wait_resource,             last_wait_type FROM        sys.dm_exec_requests r OUTER APPLY sys.dm_exec_sql_text(sql_handle) t where DB_NAME(database_id)='lilywei'  --WHERE       session_id != @@SPID -- don't show this query --AND         session_id > 50 -- don't show system queries ORDER BY    r.start_time	running	SELECT	NULL	0		MEMORY_ALLOCATION_EXT

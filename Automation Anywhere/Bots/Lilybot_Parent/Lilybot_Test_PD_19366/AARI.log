@@ -1,0 +1,110 @@
+2020-Nov-20 Wed 13:15:36.858 WARN  - com.automationanywhere.common.db.DBConfigProperties - {} - loadFromClasspath(DBConfigProperties.java:67) - Properties file [boot.db.properties] was not found in classpath
+2020-Sep-16 Wed 13:15:36.865 INFO  - com.automationanywhere.common.db.DBConfigProperties - {} - loadFromFileSystem(DBConfigProperties.java:55) - Properties file [mssql.db.properties] was not found in [.\config] directory
+2020-Sep-16 Wed 13:15:36.867 INFO  - com.automationanywhere.db.cmdline.ChangeLogProperties - {} - readProperties(ChangeLogProperties.java:189) - .\config\cluster.properties does not exist, ignoring
+2020-Sep-16 Wed 13:15:36.868 WARN  - com.automationanywhere.common.db.DBConfigProperties - {} - loadFromClasspath(DBConfigProperties.java:67) - Properties file [boot.db.properties] was not found in classpath
+2020-Sep-16 Wed 13:15:36.869 INFO  - com.automationanywhere.common.db.DBConfigProperties - {} - loadFromFileSystem(DBConfigProperties.java:55) - Properties file [mssql.db.properties] was not found in [.\config] directory
+2020-Sep-16 Wed 13:15:37.267 INFO  - com.automationanywhere.db.cmdline.ChangeLogProperties - {} - getUUIDFromDefaultTenantTable(ChangeLogProperties.java:73) - Default tenant uuid DEFAULT_TENANT_ID found from table: 00000000-0000-0000-0000-000000000000
+2020-Sep-16 Wed 13:15:37.321 INFO  - liquibase.integration.commandline.Main - {} - info(Slf4jLogger.java:42) - Starting Liquibase at Wed, 16 Sep 2020 13:15:37 PDT (version 3.8.7 #55 built at Mon Feb 24 03:04:51 UTC 2020)
+2020-Sep-16 Wed 13:15:40.742 INFO  - liquibase.integration.commandline.Main - {} - info(Slf4jLogger.java:42) - No Liquibase Pro license key supplied. Please set liquibaseProLicenseKey on command line or in liquibase.properties to use Liquibase Pro features.
+2020-Sep-16 Wed 13:15:40.743 INFO  - liquibase.integration.commandline.Main - {} - info(Slf4jLogger.java:42) - Liquibase Community 3.8.7 by Datical
+2020-Sep-16 Wed 13:15:40.945 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - select schema_name()
+2020-Sep-16 Wed 13:15:40.949 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+2020-Sep-16 Wed 13:15:40.970 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - select schema_name()
+2020-Sep-16 Wed 13:15:40.971 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT COUNT(*) FROM DATABASECHANGELOGLOCK
+2020-Sep-16 Wed 13:15:40.980 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - select schema_name()
+2020-Sep-16 Wed 13:15:40.986 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT COUNT(*) FROM DATABASECHANGELOGLOCK
+2020-Sep-16 Wed 13:15:40.991 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - select schema_name()
+2020-Sep-16 Wed 13:15:40.994 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT LOCKED FROM DATABASECHANGELOGLOCK WHERE ID=1
+2020-Sep-16 Wed 13:15:41.018 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - select schema_name()
+2020-Sep-16 Wed 13:15:41.031 INFO  - liquibase.lockservice.StandardLockService - {} - info(Slf4jLogger.java:42) - Successfully acquired change log lock
+2020-Sep-16 Wed 13:15:43.105 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT CONVERT([sysname], DATABASEPROPERTYEX(N'AAE-Database', 'Collation'))
+2020-Sep-16 Wed 13:15:43.144 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+2020-Sep-16 Wed 13:15:43.304 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+2020-Sep-16 Wed 13:15:43.345 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+2020-Sep-16 Wed 13:15:43.395 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+2020-Sep-16 Wed 13:15:43.434 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+2020-Sep-16 Wed 13:15:43.468 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+2020-Sep-16 Wed 13:15:43.511 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+2020-Sep-16 Wed 13:15:43.545 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+2020-Sep-16 Wed 13:15:43.573 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+2020-Sep-16 Wed 13:15:43.603 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - select schema_name()
+2020-Sep-16 Wed 13:15:43.604 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT TOP 1 MD5SUM FROM DATABASECHANGELOG WHERE MD5SUM IS NOT NULL
+2020-Sep-16 Wed 13:15:43.610 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - select schema_name()
+2020-Sep-16 Wed 13:15:43.611 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - select schema_name()
+2020-Sep-16 Wed 13:15:43.611 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT COUNT(*) FROM DATABASECHANGELOG
+2020-Sep-16 Wed 13:15:43.613 INFO  - liquibase.changelog.StandardChangeLogHistoryService - {} - info(Slf4jLogger.java:42) - Reading from DATABASECHANGELOG
+2020-Sep-16 Wed 13:15:43.613 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - select schema_name()
+2020-Sep-16 Wed 13:15:43.614 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - SELECT * FROM DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2020-Sep-16 Wed 13:15:43.829 INFO  - liquibase.executor.jvm.JdbcExecutor - {} - info(Slf4jLogger.java:42) - select schema_name()
+2020-Sep-16 Wed 13:15:43.836 INFO  - liquibase.lockservice.StandardLockService - {} - info(Slf4jLogger.java:42) - Successfully released change log lock
+2020-Sep-16 Wed 13:15:43.838 INFO  - liquibase.integration.commandline.Main - {} - info(Slf4jLogger.java:42) - Liquibase: Update has been successful.
